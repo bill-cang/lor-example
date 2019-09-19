@@ -6,7 +6,7 @@
 
 local DB = require("app.libs.mysql_db")
 local cf = require("app.config.cf_database")
---local cjson = require("cjson")
+local cjson = require("cjson")
 
 local db = DB:new(cf.mysql)
 
