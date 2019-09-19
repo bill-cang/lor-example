@@ -14,11 +14,12 @@ authRouter:get("/login", function(req, res, next)
 end)
 
 authRouter:post("/login", function(req, res, next)
-    --ngx.say("comm in login")
     --local params = req.body
 
     local username = req.body.username
     local password = req.body.password
+
+    --ngx.log(ngx.err,"********"..username)
 
     local notExists = true
 

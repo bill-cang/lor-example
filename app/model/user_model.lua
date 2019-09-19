@@ -13,8 +13,9 @@ local db = DB:new(cf.mysql)
 local user_model = {}
 
 function user_model:query_by_name (username,password)
+    ngx.log(ngx.err,"***********"..username.."***"..password)
 
-    local res,err = db:query("select *  from user where name = ? and password = ? limit 1",
+    local res,err = db:query("select *  from t_user where name = ? and password = ? limit 1",
             {username,password})
 
     if not res or err or type(res) ~= "table" then

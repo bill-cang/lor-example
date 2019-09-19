@@ -10,9 +10,9 @@ return {
     mysql = {
         timeout = 5000,
         connect_config = {
-            host = "127.0.0.1",
+            host = "192.168.1.214",
             port = 3306,
-            database = "mygin",
+            database = "lorex",
             user = "root",
             password = "123456",
 
